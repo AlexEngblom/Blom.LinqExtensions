@@ -1,4 +1,4 @@
-﻿namespace EfCore.LinqExtensions.Tests.Entities {
+﻿namespace Blom.LinqExtensions.Tests.Entities {
   public class Document {
 		public int Id { get; set; }
 		public string ContentType { get; set; }

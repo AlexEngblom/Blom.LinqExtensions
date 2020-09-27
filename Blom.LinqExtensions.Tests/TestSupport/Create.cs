@@ -1,9 +1,9 @@
-﻿using EfCore.LinqExtensions.Tests.Entities;
+﻿using Blom.LinqExtensions.Tests.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace EfCore.LinqExtensions.Tests.TestSupport {
+namespace Blom.LinqExtensions.Tests.TestSupport {
   public static class Create {
 
     private static ILoggerFactory loggerFactory = LoggerFactory.Create(builder => builder.AddDebug());

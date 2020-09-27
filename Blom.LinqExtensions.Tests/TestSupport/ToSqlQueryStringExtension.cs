@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using Microsoft.EntityFrameworkCore.Query;
 
-namespace EfCore.LinqExtensions.Tests.TestSupport {
+namespace Blom.LinqExtensions.Tests.TestSupport {
 
   public static class ToSqlQueryStringExtension {
 

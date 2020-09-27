@@ -1,9 +1,8 @@
-using EfCore.LinqExtensions.Tests.TestSupport;
+using Blom.LinqExtensions.Tests.TestSupport;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 
-namespace EfCore.LinqExtensions.Tests {
+namespace Blom.LinqExtensions.Tests {
 
   [TestClass]
   public class ExcludeExtensionTests {

@@ -1,7 +1,7 @@
-﻿using EfCore.LinqExtensions.Tests.Entities;
+﻿using Blom.LinqExtensions.Tests.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace EfCore.LinqExtensions.Tests.TestSupport {
+namespace Blom.LinqExtensions.Tests.TestSupport {
   public class TestDbContext : DbContext {
     public TestDbContext(DbContextOptions<TestDbContext> options) : base(options) { }
 

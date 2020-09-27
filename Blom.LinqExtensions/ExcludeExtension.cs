@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace EfCore.LinqExtensions {
+namespace Blom.LinqExtensions {
   public static class ExcludeExtension {
     
     /// <summary>

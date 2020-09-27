@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCore.LinqExtensions", "EfCore.LinqExtensions\EfCore.LinqExtensions.csproj", "{D83314FF-5510-4AF9-89CD-2EA1D3129391}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blom.LinqExtensions", "Blom.LinqExtensions\Blom.LinqExtensions.csproj", "{D83314FF-5510-4AF9-89CD-2EA1D3129391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore.LinqExtensions.Tests", "EfCore.LinqExtensions.Tests\EfCore.LinqExtensions.Tests.csproj", "{CA97AE56-B4E2-4642-B387-ED0AB1FA8C6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blom.LinqExtensions.Tests", "Blom.LinqExtensions.Tests\Blom.LinqExtensions.Tests.csproj", "{CA97AE56-B4E2-4642-B387-ED0AB1FA8C6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
