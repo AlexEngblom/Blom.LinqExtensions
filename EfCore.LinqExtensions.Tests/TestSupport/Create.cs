@@ -1,9 +1,28 @@
 ﻿using EfCore.LinqExtensions.Tests.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 
 namespace EfCore.LinqExtensions.Tests.TestSupport {
   public static class Create {
+
+    private static ILoggerFactory loggerFactory = LoggerFactory.Create(builder => builder.AddDebug());
+
+    /// <summary>
+    /// Used to validate query translation while we wait for https://blog.oneunicorn.com/2020/01/12/toquerystring/ being published
+    /// </summary>
+    public static TestDbContext RealDbContext() {
+      var options = new DbContextOptionsBuilder<TestDbContext>()
+        .UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=testi;Trusted_Connection=True;")
+        .UseLoggerFactory(loggerFactory)
+        .Options;
+
+      var database = new TestDbContext(options);
+      database.Database.EnsureDeleted();
+      database.Database.EnsureCreated();
+
+      return database;
+    }
 
     public static TestDbContext InMemoryDbContext() {
       var options = new DbContextOptionsBuilder<TestDbContext>()

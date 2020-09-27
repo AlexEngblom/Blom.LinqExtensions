@@ -25,7 +25,7 @@ namespace EfCore.LinqExtensions.Tests {
       Assert.AreEqual(doc.FileName, result.FileName, "FileName");
       Assert.AreEqual(doc.Author, result.Author, "Author");
       Assert.IsNull(result.FileBytes, "FileBytes");
-    }
+    }   
 
     [TestMethod]
     public void Exclude_MultipleMembers() {
@@ -48,6 +48,25 @@ namespace EfCore.LinqExtensions.Tests {
       Assert.AreEqual(doc.FileName, result.FileName, "FileName");
       Assert.AreEqual(doc.Author, result.Author, "Author");
       Assert.IsNull(result.ContentType, "ContentType");
+      Assert.IsNull(result.FileBytes, "FileBytes");
+    }
+
+    [TestMethod]
+    public void Exclude_SqlQueryTranslation() {
+
+      using var sql = Create.RealDbContext();
+
+      var doc = sql.AddDocument();
+      var query = sql.Documents.Exclude(x => x.FileBytes);
+      var translation = query.ToSqlQueryString();
+
+      Assert.IsFalse(translation.Contains(nameof(doc.FileBytes)), "Query translation does not contain excluded field");
+
+      var result = query.FirstOrDefault();
+      Assert.AreEqual(doc.Id, result.Id, "Id");
+      Assert.AreEqual(doc.ContentType, result.ContentType, "ContentType");
+      Assert.AreEqual(doc.FileName, result.FileName, "FileName");
+      Assert.AreEqual(doc.Author, result.Author, "Author");
       Assert.IsNull(result.FileBytes, "FileBytes");
     }
 
