@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCore.LinqExtensions", "EfCore.LinqExtensions\EfCore.LinqExtensions.csproj", "{D83314FF-5510-4AF9-89CD-2EA1D3129391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore.LinqExtensions.Tests", "EfCore.LinqExtensions.Tests\EfCore.LinqExtensions.Tests.csproj", "{CA97AE56-B4E2-4642-B387-ED0AB1FA8C6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D83314FF-5510-4AF9-89CD-2EA1D3129391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D83314FF-5510-4AF9-89CD-2EA1D3129391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D83314FF-5510-4AF9-89CD-2EA1D3129391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D83314FF-5510-4AF9-89CD-2EA1D3129391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA97AE56-B4E2-4642-B387-ED0AB1FA8C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA97AE56-B4E2-4642-B387-ED0AB1FA8C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA97AE56-B4E2-4642-B387-ED0AB1FA8C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA97AE56-B4E2-4642-B387-ED0AB1FA8C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87D5E965-B1B8-453A-AA49-78D5D55AC25F}
+	EndGlobalSection
+EndGlobal
